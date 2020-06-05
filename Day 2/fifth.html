@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 (fifth)</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p>
+        I am a paragraph. I am 10000 milliseconds old. I like to eat words and sometimes numbers.   
+        I am a paragraph. I am 10000 milliseconds old. I like to eat words and sometimes numbers.
+    </p>
+    <button>Click</button>
+
+    <script>
+        $("button").click(function() {
+            $("p").hide("slow", function() {
+                alert("done with hiding");
+            });
+        });;
+    </script>
+</body>
+</html>

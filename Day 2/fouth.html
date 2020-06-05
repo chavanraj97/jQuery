@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 (fourth)</title>
+
+    <style>
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="https://i.ytimg.com/vi/0KEv38tAWm4/maxresdefault.jpg" alt="mountains"><br>
+    <button>Click</button>
+
+
+    <script>
+        $("button").click(function () {
+            $("img").animate({
+                height: '500px',
+                width: '500px'
+            },2000);
+        });
+    </script>
+</body>
+</html>
