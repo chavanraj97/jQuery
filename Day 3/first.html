@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 (first)</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="text" name="ip1" id="ipt1"><br>
+    <input type="text" name="ip2" id="ipt2">
+    <button>click</button>
+
+    <script>
+        var t = "";
+        $("document").ready(function() {
+            $("button").click(function() {
+                t = $("input:first").val() ;
+                $("input:first").val($("input:last").val());
+                $("input:last").val(t);
+            });
+        });
+    </script>
+</body>
+</html>

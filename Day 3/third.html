@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 (third)</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+
+    Peach <input type="radio" name="rd" id="rd1" value="Peach">
+    Grape<input type="radio" name="rd" id="rd2" value="Grape">
+
+
+    <script>
+        var x = 0;
+        $("input:radio").click(function() {
+            if(x!==0){
+                $("li:last").remove();
+            }
+            $("ul").append("<li>" + $(this).val() + "</li>");
+            x++;
+        });
+    </script>
+
+
+</body>
+</html>

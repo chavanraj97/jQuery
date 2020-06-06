@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3(fifth)</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <textarea name="txt" id="tx" cols="30" rows="10"></textarea><br>
+    Blue <input type="radio" name="rd" id="rd1" value="blue">
+
+    Red <input type="radio" name="rd" id="rd2" value="red">
+
+
+    <script>
+        $(document).ready(function() {
+            $("input:radio").click(function() {
+                $("textarea").css("color", $(this).val());
+            });
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3(second)</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <style>
+        img{
+            height: 350px;
+            width: 500px;
+            margin: 3px;
+        }
+        .im{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <img class="im" src="https://www.tripsavvy.com/thmb/8n2tsPFsUvh0O7yRJhHeF2gZYpU=/2125x1411/filters:fill(auto,1)/GettyImages-148914394-5c6cebd2c9e77c000169307e.jpg" alt="River">
+
+
+    <script>
+        $(document).ready(function() {
+            $("img").hover(function() {
+                $(this).removeClass("im");
+            }, 
+            function() {
+                $(this).addClass("im");
+            });
+        })
+        
+    </script>
+</body>
+</html>
