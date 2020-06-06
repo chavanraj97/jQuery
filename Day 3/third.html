@@ -24,7 +24,7 @@
         var x = 0;
         $("input:radio").click(function() {
             if(x!==0){
-                $("li:last").remove();
+                $("ul li:last").remove();
             }
             $("ul").append("<li>" + $(this).val() + "</li>");
             x++;
